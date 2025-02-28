@@ -12,3 +12,4 @@ C:\Users\hxmilez\Desktop\C#\oop-adventure\oop-adventure\obj\Debug\net8.0\refint\
 C:\Users\hxmilez\Desktop\C#\oop-adventure\oop-adventure\obj\Debug\net8.0\oop-adventure.pdb
 C:\Users\hxmilez\Desktop\C#\oop-adventure\oop-adventure\obj\Debug\net8.0\oop-adventure.genruntimeconfig.cache
 C:\Users\hxmilez\Desktop\C#\oop-adventure\oop-adventure\obj\Debug\net8.0\ref\oop-adventure.dll
+C:\Users\hxmilez\Desktop\C#\oop-adventure\oop-adventure\obj\Debug\net8.0\oop-adventure.sourcelink.json

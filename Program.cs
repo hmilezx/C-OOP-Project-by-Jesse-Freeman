@@ -1,6 +1,7 @@
 ﻿using oop_adventure;
 using oop_adventure.Src.Characters;
 using oop_adventure.Src.Text;
+using oop_adventure.Src.Map;
 
 //Text.LoadLanguage(new English());
 Text.LoadLanguage(new Filipino());
@@ -17,3 +18,5 @@ if (name == String.Empty)
 var player = new Player(name);
 
 Console.WriteLine(Text.Language.Welcome, player.Name);
+
+var house = new House(player);
