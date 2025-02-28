@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("oop-adventure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7eff3e397ab346e09ea9e9fdce1da3eec335e3a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("oop-adventure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("oop-adventure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

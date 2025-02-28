@@ -5,5 +5,7 @@ public class English : Language
     public English()
     {
         ChooseYourName = "Hello, What is yout name?";
+        DefaultName = "Miles";
+        Welcome = "Welcome {0} to your OOP Adventure";
     }
 }
