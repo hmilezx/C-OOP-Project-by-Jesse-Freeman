@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+namespace oop_adventure.Src.Map;
 
-namespace oop_adventure.Src.Map
+public enum Directions
 {
-    internal class Directions
-    {
-    }
+    None,
+    North,
+    East,
+    South,
+    West,
 }

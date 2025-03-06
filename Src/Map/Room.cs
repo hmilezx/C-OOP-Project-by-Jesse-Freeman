@@ -16,7 +16,7 @@ public class Room
         {Directions.None, -1 },
     };
 
-
+    public bool Visited { get; set; }
 
 }
 

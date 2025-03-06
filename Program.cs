@@ -3,8 +3,8 @@ using oop_adventure.Src.Characters;
 using oop_adventure.Src.Text;
 using oop_adventure.Src.Map;
 
-//Text.LoadLanguage(new English());
-Text.LoadLanguage(new Filipino());
+Text.LoadLanguage(new English());
+//Text.LoadLanguage(new Filipino());
 
 
 Console.WriteLine(Text.Language.ChooseYourName);
