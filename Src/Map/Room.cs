@@ -1,7 +1,7 @@
-﻿using oop_adventure.Src.Text;
-using oop_adventure;
-using oop_adventure.Src.Characters;
-using oop_adventure.Src.Map;
+﻿
+namespace oop_adventure;
+
+
 
 public class Room
 {

@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oop_adventure.Src.Action
+namespace oop_adventure;
+
+public abstract class Action
 {
-    public abstract class Action
+    public virtual string Name => "";
+    public virtual void Execute(string[] args)
     {
-        public virtual string Name => "";
-        public virtual void Execute(string[] args)
-        {
-            throw new Exception("Nothing to execute");
-        }
+        throw new Exception("Nothing to execute");
     }
 }

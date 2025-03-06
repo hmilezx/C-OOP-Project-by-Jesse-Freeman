@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace oop_adventure.Src.Action
+namespace oop_adventure
 {
     public sealed class Actions
     {
@@ -24,9 +20,35 @@ namespace oop_adventure.Src.Action
         }
 
         private readonly Dictionary<string, Action> _registeredActions = new();
-        private Actions() 
+        private Actions()
         {
-           // prevents creating an instance of actions outside the class itself as it is a private constructor 
+            // prevents creating an instance of actions outside the class itself as it is a private constructor 
+        }
+
+        public void Register(Action action)
+        {
+            var name = action.Name.ToLower();
+
+            if (_registeredActions.ContainsKey(name))
+            
+                _registeredActions[name] = action;
+
+            else 
+                _registeredActions.Add(name, action);
+                
+
+
+            
+        }
+        public void Execute(string[] args)
+        {
+            var actionName = args[0];
+
+            if (_registeredActions.ContainsKey(actionName))
+                _registeredActions[actionName].Execute(args);
+
+            else
+                Console.WriteLine(Text.Language.ActionError);
         }
     }
 }

@@ -1,22 +1,25 @@
-﻿
-namespace oop_adventure.Src.Text;
+﻿ // Make sure Language is accessible
+using System;
 
-public static class Text
+namespace oop_adventure
 {
-    private static Language _language;
-
-    public static Language Language
+    public static class Text
     {
-        get
+        private static Language _language;
+
+        public static Language Language
         {
-            if (_language == null)
-                throw new Exception("No Language loaded");
-            return _language;
+            get
+            {
+                if (_language == null)
+                    throw new Exception("No Language loaded");
+                return _language;
+            }
         }
-    }
 
-    public static void LoadLanguage(Language language)
-    {
-        _language = language;
+        public static void LoadLanguage(Language language)
+        {
+            _language = language;
+        }
     }
 }

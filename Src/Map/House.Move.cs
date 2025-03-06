@@ -1,4 +1,4 @@
-﻿namespace oop_adventure.Src.Map;
+﻿namespace oop_adventure;
 
 public partial class House
 {

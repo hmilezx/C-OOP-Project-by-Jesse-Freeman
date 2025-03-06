@@ -1,4 +1,4 @@
-﻿namespace oop_adventure.Src.Characters;
+﻿namespace oop_adventure;
 
 public class Player : Character
 {
