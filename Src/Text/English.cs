@@ -12,5 +12,7 @@ public class English : Language
         ActionError = "You cannot do that";
         Go = "Go";
         GoError = "You cannot go that way";
+        WhatToDo = "What do you want to do?";
+        Quit = "quit";
     }
 }
