@@ -9,7 +9,7 @@ public partial class House
 
     public int Width { get; set; }
     public int Height { get; set; }
-    public Room[] Rooms { get; protected set; }
+    public Room[] Rooms { get; private set; }
 
     public House(Player player)
     {

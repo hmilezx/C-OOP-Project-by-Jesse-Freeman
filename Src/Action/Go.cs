@@ -2,6 +2,7 @@
 {
     public class Go : Action
     {
+        public override string Name => Text.Language.Go;
         private readonly House _house;
 
         public Go(House house)
@@ -13,11 +14,8 @@
         {
             var currentRoom = _house.CurrentRoom;
             var dir = args[1].Substring(0, 1).ToUpper() + args[1].Substring(1).ToLower();
-            if (!Enum.TryParse(dir, out Directions newDirection))
-            {
-                Console.WriteLine(Text.Language.GoError);
-                return;
-            }
+            Enum.TryParse(dir, out Directions newDirection);
+            
 
             var nextRoomIndex = currentRoom.Neighbors[newDirection];
 
