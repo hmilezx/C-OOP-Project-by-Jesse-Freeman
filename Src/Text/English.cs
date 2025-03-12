@@ -8,11 +8,27 @@ public class English : Language
         DefaultName = "Miles";
         Welcome = "Welcome {0} to your OOP Adventure";
         DefaultRoomName = "Room {0} ({1},{2})";
-        DefaultRoomDescription = "You are in a room with doors to the {0}";
+        DefaultRoomDescription = "You are in a {0} room with doors to the {1}";
         ActionError = "You cannot do that";
         Go = "Go";
         GoError = "You cannot go that way";
         WhatToDo = "What do you want to do?";
         Quit = "quit";
+        RoomNew = "You Entered {0}";
+        RoomOld = "You returned to {0}";
+        And = "And";
+        Comma = ",";
+        Space = " ";
+        RoomDescriptions = new List<string>
+        {
+            "Normal",
+            "Cold",
+            "Warm",
+            "dark",
+            "bright",
+            "scary",
+            "strange",
+        };
+
     }
 }
