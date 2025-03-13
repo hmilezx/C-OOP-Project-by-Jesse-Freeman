@@ -3,10 +3,12 @@ namespace oop_adventure;
 
 
 
-public class Room
+public class Room : IInventory
 {
+    
     public string Name { get; set; } = Text.Language.DefaultRoomName;
     public string Description { get; set; } = Text.Language.DefaultRoomDescription;
+    private readonly IInventory _inventory = new Inventory();
     public Dictionary<Directions, int> Neighbors { get; set; } = new()
     {
         {Directions.North, -1 },
@@ -17,6 +19,10 @@ public class Room
     };
 
     public bool Visited { get; set; }
+
+    public int Total => _inventory.Total;
+
+    public string[] Inventoryist => _inventory.Inventoryist;
 
     public override string ToString()
     {
@@ -35,6 +41,40 @@ public class Room
         return sb.ToString(); //converts the string builder back into a regular string 
     }
 
+    public void Add(Item item)
+    {
+        _inventory.Add(item);
+    }
+
+    public bool Contains(string itemname)
+    {
+        return _inventory.Contains(itemname);
+    }
+
+    public Item? Find(string itemname)
+    {
+        return _inventory.Find(itemname);
+    }
+
+    public Item? Find(string itemname, bool remove)
+    {
+        return _inventory.Find(itemname, remove);
+    }
+
+    public void Remove(Item item)
+    {
+        _inventory.Remove(item);
+    }
+
+    public Item? Take(string itemname)
+    {
+        return _inventory.Take(itemname);
+    }
+
+    public void Use(string itemname, string source)
+    {
+        _inventory.Use(itemname, source);
+    }
 }
 
 

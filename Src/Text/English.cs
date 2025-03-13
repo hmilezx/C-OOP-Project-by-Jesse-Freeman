@@ -29,6 +29,9 @@ public class English : Language
             "scary",
             "strange",
         };
-
+        NoItem = "You do not have {0}. ";
+        Backpack = "Backpack";
+        BackpackError = "No items in the backpack";
+        BackpackDescription = "your backpack contains {0}";
     }
 }
