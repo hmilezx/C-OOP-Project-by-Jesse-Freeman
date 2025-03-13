@@ -38,6 +38,18 @@ public class Room : IInventory
 
         sb.Append(description); // adds description to the sb builder 
 
+        if (_inventory.Total > 0) // because inventory class has total which counts the total number of items
+        {
+            var items = _inventory.Inventoryist;
+
+            var pluralPre = items.Length > 1 ? Text.Language.Are : Text.Language.Is;
+
+            var pluralPost = items.Length > 1 ? Text.Language.Plural : "";
+
+            sb.Append(string.Format(Text.Language.TotalItems, pluralPre, items.Length, pluralPost));
+            sb.Append(Text.Language.JoinedWordList(items, Text.Language.And) + Text.Language.Period);
+        }
+
         return sb.ToString(); //converts the string builder back into a regular string 
     }
 

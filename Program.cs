@@ -1,4 +1,5 @@
 ﻿using oop_adventure;
+using System.Net.Http.Headers;
 
 
 
@@ -24,9 +25,17 @@ var house = new House(player);
 house.CreateRooms(3, 3);
 house.DecorateRooms(); 
 
+var items = new List<Item>
+{
+    new Key(house),
+    new Chest( new[] {new Gold(100)}, house)
+};
+
+house.PopulateRooms(items);
 
 Actions.Instance.Register(new Go(house));
 Actions.Instance.Register(new Backpack(player));
+Actions.Instance.Register(new Take(house));
 house.GoToStartingRoom();
 
 var run = true;

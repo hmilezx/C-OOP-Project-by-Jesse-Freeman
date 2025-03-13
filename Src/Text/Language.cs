@@ -22,6 +22,26 @@ public abstract partial class Language
     public string Backpack { get; protected set; } = "";
     public string BackpackError { get; protected set; } = "";
     public string BackpackDescription { get; protected set; } = "";
+    public string Chest { get; protected set; } = "";
+    public string UnlockChest { get; protected set; } = "";
+    public string Key { get; protected set; } = "";
+    public string ChestEmpty { get; protected set; } = "";
+    public string ChestFound { get; protected set; } = "";
+    public string Gold { get; protected set; } = "";
+    public string Coin { get; protected set; } = "";
+    public string Coins { get; protected set; } = "";
+    public string Plural { get; protected set; } = "";
+    public string Is { get; protected set; } = "";
+    public string Are { get; protected set; } = "";
+    public string TotalItems { get; protected set; } = "";
+    public string Period { get; protected set; } = "";
+    public string Take { get; protected set; } = "";
+    public string TakeError { get; protected set; } = "";
+    public string NotTaken { get; protected set; } = "";
+    public string TookDescripton { get; protected set; } = "";
+    public string CantTakeDescription { get; protected set; } = "";
+
+
 }
 
 

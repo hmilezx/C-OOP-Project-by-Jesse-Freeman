@@ -33,5 +33,23 @@ public class English : Language
         Backpack = "Backpack";
         BackpackError = "No items in the backpack";
         BackpackDescription = "your backpack contains {0}";
+        Chest = "chest";
+        UnlockChest = "you unlocked the chest";
+        Key = "key";
+        ChestEmpty = "The chest is empty";
+        ChestFound = "You found : {0}";
+        Gold = "{0} Gold {1}";
+        Coin = "coin";
+        Coins = Coin + "s";
+        Plural = "s";
+        Is = "is";
+        Are = "are";
+        TotalItems = " There {0} {1}  item{2} in the room: ";
+        Period = ".";
+        Take = "Take";
+        TakeError = "there is nothing to take";
+        NotTaken = "You cannot take that";
+        CantTakeDescription = "You cant take the {0}";
+        TookDescripton = "You took a {0}";
     }
 }
